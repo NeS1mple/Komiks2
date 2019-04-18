@@ -6,4 +6,5 @@ from time import time
 
 def index(request):
     return render(request, 'index.html', {'test': time()})
-    return render(request, 'Karbonara.html', )
+def kar(request):
+    return render(request, 'karbonara.html')
