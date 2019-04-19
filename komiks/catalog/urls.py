@@ -2,6 +2,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.index),
-    url(r'/karbonara', views.kar),
+    url(r'karbonara/$', views.my_new_view),
+    url(r'', views.index)
 ]
