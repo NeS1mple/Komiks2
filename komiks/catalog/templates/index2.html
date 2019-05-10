@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/B0A34D4D-BDD9-4D49-8259-E37B9AD47F9C/main.js" charset="UTF-8"></script><script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(53361523, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53361523" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <title>Komiks</title>
+    <style>
+body{
+  background-color: #fffff1;
+  background-size: cover;
+  font-family: calibri;
+}
+#wrapper{ /* Оболочка страницы сайта */
+  width: 900px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  /* Меняется задний фон страницы */
+}
+/* Шапка сайта */
+#header{
+position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
+  height: 236px; /* Высота шапки */
+  background-image: url(https://raw.githubusercontent.com/cry1s/Komiks2/master/komiks/catalog/templates/images/1.png); /* Фон шапки */
+  background-size: cover;
+   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+  border-radius: 5px; /* Закругляются углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+}
+img{ /* Фоновая картинка в шапке */
+float: left; /* Разрешаем наплывание других элементов на картинку */
+  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
+h1{ /* Заголовок сайта */
+  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
+  color:#464451; /* Цвет заголовка */
+}
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Komiks</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
+.marcer{ /* Галочки маркеры меню */
+  float: left; /* Размещаем слева от текста */
+  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}
+/* Контент (статья) */
+#content{ /* Блок контента */
+  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+  width: 895px; /* Ширина статьи */
+  padding: 10px; /* Отступ текста от краёв блока */
+  background: rgba(255,255,255,0.8); /* Фон статьи */
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ /* Картинка в тексте слева */
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ /* Картинка в тексте справа */
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+/* Подвал */
+#footer{ /* Блок подвала */
+  height:80px; /* Высота блока подвала */
+  background-color: #ffffff; /* Фон блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 5px; /* Закруглённые углы */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+  .fon{ /* Номер телефона */
+  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  margin:20px 0 0 20px;
+}
+.fax{ /* Номер факса */
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ /* Адрес E-mail */
+  float:left;
+ margin:20px 0 0 60px;
+}
 </style>
 </head>
-<body link="blue" alink="red">
-<h1>Komiks</h1>
-<input value="KARBONARA" type="button" onclick="location.href='http://komiks.ml/karbonara/'" />
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>Komiks.ml</h1>
+      <img src="" width="900">
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Заголовок статьи-->
+<!--Текст статьи-->
+<img src=""><input value="KARBONARA" type="button" onclick="location.href='http://komiks.ml/catalog/karbonara/'" />
 <p>На даный момент сайт в разроботке.
 <a href="https://vk.com/comiks_to" target="_blank">Мы </a>вам сообщим когда разработка сайта закончится.</p>
 
 <p>Создатель сайта(если есть вопросы, то обращайтесь к нему) <a href="https://vk.com/id378335197" target="_blank">Вова</a>.
-Дизайнер <a href="https://vk.com/alekorel" target="_blank">Саша</a>,
-Отвественный за комиксы <a href="https://vk.com/id456322142" target="_blank">Катя</a>
-    и мой кодер помощник <a href="https://vk.com/kzhikharev" target="_blank">Костя</a>.</p>
+Дизайнер <a href="https://vk.com/alekorel" target="_blank">Саша</a>
+и мой кодер помощник <a href="https://vk.com/kzhikharev" target="_blank">Костя</a>.</p>
 
 <p>Регистрация скоро будет доступна.</p>
-<!-- {{ test }} -->
+<p>
+</p>
+    </div>
+<!--Запрет наплывания-->
+  <div class="clear"></div>
+<!--Подвал-->
+    <div id="footer">
+        <p class="fon"><strong><a href="https://vk.com/comiks_to">Вконтакте</a> <br></strong> </p>
+
+    </div>
+  </div>
 </body>
 </html>
